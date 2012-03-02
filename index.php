@@ -10,9 +10,13 @@
 		join	names n on c.categoryid = n.categoryid
 		order by g.group,c.category,n.name
 	");
-	// define model for nested data
-	// "key" is required for each level to so that the array filter will work
-	// "children" should be used for defining nested data	
+	/*
+	 * define model for nested data
+	 * "key" is required for each level to so that the array filter will work
+	 * "children" should be used for defining nested data	
+	 * for other key:val pairs, the "key" should be the column name from the query,
+	 * and the value should be the name of the key you want in the new array
+	 */ 
 	$model = array(
 		'key'=>'group',
 		'group'=>'group',
