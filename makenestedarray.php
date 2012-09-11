@@ -57,7 +57,7 @@
 		foreach($keys as $pos=>$key) {
 			if($key != 'key' && $key != 'children') {
 				// add key:value pair to "columns" array
-				$columns[$smodel[$key]] = $row[$key];
+				$columns[$model[$key]] = $row[$key];
 			}
 		}
 		return $columns;
